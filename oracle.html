@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抽签软件</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main-container">
+        <div id="draw-container">
+            <img src="draw-bucket.png" alt="抽签桶" id="draw-bucket">
+            <button id="shake-btn">开始问卜</button>
+        </div>
+        <div id="result-container" style="display:none;">
+            <div id="result-content">
+                <div id="gua-info">
+                    <h2 id="gua-name"></h2>
+                    <p id="gua-description"></p>
+                    <img id="gua-image" alt="卦象图">
+                </div>
+                <div id="yao-info">
+                    <h3>爻词</h3>
+                    <ul id="yao-list"></ul>
+                </div>
+            </div>
+            <button id="back-btn" onclick="goBack()">返回主页面</button>
+        </div>
+    </div>
+    <script src="oracle-script.js"></script>
+</body>
+</html>

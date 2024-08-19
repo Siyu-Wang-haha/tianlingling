@@ -1,34 +1,85 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    margin: 0;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    background-color: #F3E1C1; /* 敦煌色彩背景 */
+    font-family: 'KaiTi', cursive; /* 使用行楷字体 */
 }
 
-#main-container {
+#container, #main-container {
     text-align: center;
 }
 
-#qian-tong {
+#title {
+    font-size: 48px;
+    color: #8B4513; /* 深棕色，符合敦煌色彩 */
+}
+
+#oracle-btn, #shake-btn, #back-btn {
+    padding: 15px 30px;
+    font-size: 22px;
+    background-color: #8B4513; /* 深棕色按钮，符合敦煌色彩 */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#oracle-btn:hover, #shake-btn:hover, #back-btn:hover {
+    background-color: #A0522D; /* 悬停时的颜色 */
+}
+
+#draw-bucket {
+    width: 200px; /* 调整抽签桶图片大小 */
+    margin-bottom: 20px; /* 与按钮保持一定间距 */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#result-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#gua-info {
+    flex: 1;
+    text-align: left;
+}
+
+#yao-info {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#gua-name {
     font-size: 36px;
+    color: #8B4513;
     margin-bottom: 20px;
 }
 
-#shake-btn, #back-btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
+#gua-description {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 30px;
 }
 
-#result-container {
+#yao-list {
+    list-style-type: none;
+    padding: 0;
     font-size: 18px;
-    color: #333;
+    color: #8B4513;
 }
+#gua-image {
+    width: 100px; /* 调整卦象图大小 */
+    margin-top: 20px;
+}
+
+
+
